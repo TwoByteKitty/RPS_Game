@@ -12,91 +12,97 @@
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <div class="row text-center mb-5">
-    <div class="col col-xs-12">
-      <h1 class="display-3">Rock, Paper, Scissors!</h1>
+    <div class="row text-center mb-5">
+      <div class="col col-xs-12">
+        <h1 class="display-3">Rock, Paper, Scissors!</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="row mb-5">
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h3>Player Wins : 0</h3>
+    <div class="row mb-5">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h3>Player Wins : 0</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-right">
+          <div class="card-body">
+            <h3>Computer Wins: 0</h3>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card text-right">
-        <div class="card-body">
-          <h3>Computer Wins: 0</h3>
+
+    <div class="row mb-5">
+      <div class="col align-self-center">
+        <div class="card">
+          <img src="Assets/question-mark.png" alt="placeholder" class="img-thumbnail playerOneChoice placeholder">
+          <img src="Assets/Rustic-Boulder-550x450.jpg" alt="rock" class="img-thumbnail playerOneChoice rock" style="display:none;">
+          <img src="Assets/apaypeir2.jpg" alt="paper" class="img-thumbnail playerOneChoice paper" style="display:none;">
+          <img src="Assets/wscissors.jpg" alt="scissors" class="img-thumbnail playerOneChoice scissors" style="display:none;">
+        </div>
+        player's choice
+      </div>
+      <div class="col col-xs-6 align-self-end">
+        <div class="jumbotron">
+
+        </div>
+      </div>
+      <div class="col align-self-center">
+        <div class="card">
+          <img src="Assets/question-mark.png" alt="placeholder" class="img-thumbnail playerTwoChoice placeholder">
+          <img src="Assets/Rustic-Boulder-550x450.jpg" alt="rock" class="img-thumbnail playerTwoChoice rock" style="display:none;">
+          <img src="Assets/apaypeir2.jpg" alt="paper" class="img-thumbnail playerTwoChoice paper" style="display:none;">
+          <img src="Assets/wscissors.jpg" alt="scissors" class="img-thumbnail playerTwoChoice scissors" style="display:none;">
+        </div>
+        computer's choice
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col col-md-4">
+        <div class="input-group">
+          <input type="radio" name="rpsChoice" value="rock" class="rpsChoice">
+          <div>
+            <img src="Assets/Rustic-Boulder-550x450.jpg" class="img-fluid" alt="rock">
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="input-group">
+          <input type="radio" name="rpsChoice" value="paper" class="rpsChoice">
+          <div>
+            <img src="Assets/apaypeir2.jpg" class="img-fluid" alt="paper">
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="input-group">
+          <input type="radio" name="rpsChoice" value="scissors" class="rpsChoice">
+          <div>
+            <img src="Assets/wscissors.jpg" class="img-fluid" alt="scissors">
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <button type="button" class="btn btn-info btn-lg btn-block p-4">Go!</button>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <button type="button" class="btn btn-warning btn-lg btn-block p-4">Reset</button>
+      </div>
+    </div>
+
   </div>
-
-  <div class="row mb-5">
-    <div class="col align-self-center">
-      <div class="card">
-        <img src="..." alt="..." class="img-thumbnail">
-      </div>
-      player's choice
-    </div>
-    <div class="col col-xs-6 align-self-end">
-      <div class="jumbotron">
-
-      </div>
-    </div>
-    <div class="col align-self-center">
-      <div class="card">
-        <img src="..." alt="..." class="img-thumbnail">
-      </div>
-      computer's choice
-    </div>
-  </div>
-
-  <div class="row mb-5">
-    <div class="col col-md-4">
-      <div class="input-group">
-        <input type="radio" name="rpsChoice" value="rock">
-        <div>
-          <img src="Assets/Rustic-Boulder-550x450.jpg" class="img-fluid" alt="rock">
-        </div>
-      </div>
-    </div>
-    <div class="col col-md-4">
-      <div class="input-group">
-        <input type="radio" name="rpsChoice" value="paper">
-        <div>
-          <img src="Assets/apaypeir2.jpg" class="img-fluid" alt="paper">
-        </div>
-      </div>
-    </div>
-    <div class="col col-md-4">
-      <div class="input-group">
-        <input type="radio" name="rpsChoice" value="scissors">
-        <div>
-          <img src="Assets/wscissors.jpg" class="img-fluid"alt="scissors">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-3">
-    <div class="col">
-      <button type="button" class="btn btn-info btn-lg btn-block p-4">Go!</button>
-    </div>
-  </div>
-
-  <div class="row mb-5">
-    <div class="col">
-      <button type="button" class="btn btn-warning btn-lg btn-block p-4">Reset</button>
-    </div>
-  </div>
-
-</div>
 
 
 
@@ -110,6 +116,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
