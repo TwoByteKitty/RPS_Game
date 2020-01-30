@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css"/>
   <title>Rock, Paper, Scissors</title>
 </head>
 
@@ -24,14 +25,14 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h3>Player Wins : 0</h3>
+            <h3>Player Wins : <span id="playerOneWins"></span></h3>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card text-right">
           <div class="card-body">
-            <h3>Computer Wins: 0</h3>
+            <h3>Computer Wins:  <span id="playerTwoWins"></span></h3>
           </div>
         </div>
       </div>
@@ -39,30 +40,36 @@
 
     <div class="row mb-5">
       <div class="col align-self-center">
-        <div class="card">
-          <img src="Assets/question-mark.png" alt="placeholder" class="img-thumbnail playerOneChoice placeholder">
+        <div class="card plChoice">
+          <img src="Assets/question1.jpg" alt="placeholder" class="img-thumbnail playerOneChoice placeholder">
           <img src="Assets/Rustic-Boulder-550x450.jpg" alt="rock" class="img-thumbnail playerOneChoice rock" style="display:none;">
           <img src="Assets/apaypeir2.jpg" alt="paper" class="img-thumbnail playerOneChoice paper" style="display:none;">
           <img src="Assets/wscissors.jpg" alt="scissors" class="img-thumbnail playerOneChoice scissors" style="display:none;">
+          <div class="lead">Player One Chooses </div>
         </div>
-        player's choice
       </div>
       <div class="col col-xs-6 align-self-end">
-        <div class="jumbotron">
-
+        <div class="jumbotron winnerDisplay">
+          <img src="Assets/Rustic-Boulder-550x450.jpg" alt="rock" class="img-thumbnail playerWinnerChoice rock" style="display:none;">
+          <img src="Assets/apaypeir2.jpg" alt="paper" class="img-thumbnail playerWinnerChoice paper" style="display:none;">
+          <img src="Assets/wscissors.jpg" alt="scissors" class="img-thumbnail playerWinnerChoice scissors" style="display:none;">
         </div>
       </div>
       <div class="col align-self-center">
-        <div class="card">
-          <img src="Assets/question-mark.png" alt="placeholder" class="img-thumbnail playerTwoChoice placeholder">
+        <div class="card plChoice">
+          <img src="Assets/question1.jpg" alt="placeholder" class="img-thumbnail playerTwoChoice placeholder">
           <img src="Assets/Rustic-Boulder-550x450.jpg" alt="rock" class="img-thumbnail playerTwoChoice rock" style="display:none;">
           <img src="Assets/apaypeir2.jpg" alt="paper" class="img-thumbnail playerTwoChoice paper" style="display:none;">
           <img src="Assets/wscissors.jpg" alt="scissors" class="img-thumbnail playerTwoChoice scissors" style="display:none;">
+          <div class="lead">Player Two Chooses </div>
         </div>
-        computer's choice
       </div>
     </div>
-
+    <div class="row text-center mb-4">
+      <div class="col">
+        <h2 class="d-block display-4">Choose Your Weapon!</h2>
+      </div>
+    </div>
     <div class="row mb-5">
       <div class="col col-md-4">
         <div class="input-group">
@@ -92,13 +99,13 @@
 
     <div class="row mb-3">
       <div class="col">
-        <button type="button" class="btn btn-info btn-lg btn-block p-4">Go!</button>
+        <button type="button" class="goBtn btn btn-info btn-lg btn-block p-4">Go!</button>
       </div>
     </div>
 
     <div class="row mb-5">
       <div class="col">
-        <button type="button" class="btn btn-warning btn-lg btn-block p-4">Reset</button>
+        <button type="button" class="resetBtn btn btn-warning btn-lg btn-block p-4">Reset</button>
       </div>
     </div>
 
